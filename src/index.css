@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f6f7f8;
+    user-select: none;
+}
+
+.hero {
+    background: url(./assets/bg-dot.png) no-repeat center center/cover;
+}
+
+.hover-card-child,
+.hover-card-child-1 {
+    transition: .4s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    -moz-transition: .4s ease-in-out;
+    -ms-transition: .4s ease-in-out;
+    -o-transition: .4s ease-in-out;
+}
+
+.hover-card:hover .hover-card-child {
+    opacity: 1;
+    display: flex;
+}
+
+.hover-card:hover .hover-card-child-1 {
+    top: 50%;
+}
+
+.pop-before::before {
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.transform-center {
+    transform: translate(50%, 50%);
+    -webkit-transform: translate(50%, 50%);
+    -moz-transform: translate(50%, 50%);
+    -ms-transform: translate(50%, 50%);
+    -o-transform: translate(50%, 50%);
+}
+
+@media (max-width: 767px) {
+    .wahed-navbar {
+        height: 100vh;
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: #ff4267;
+        width: 50%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        color: #fff;
+        border-top-right-radius: 10px;
+        transition: .5s ease-in-out;
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -ms-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+    }
+
+    .wahed-navbar.active {
+        left: 0;
+    }
+
+    .wahed-navbar img {
+        margin: 0;
+    }
+}
