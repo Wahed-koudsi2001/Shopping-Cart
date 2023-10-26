@@ -7,8 +7,8 @@ Live Demo: https://buyitmes.netlify.app/
 
 I developed this web app using React.js to show off my skills, The main libraries I have used,
 
-1_ React Router 6.4v for Switch between pages
+1_ React Router 6.4v for Switch between pages.
 
-2_ Tainwind css for styling 
+2_ Tainwind css for styling.
 
-3_ Framer motion for animation
+3_ Framer motion for animation.
